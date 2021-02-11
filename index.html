@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">jQuery Tabs</h1>
+        <section class="tabs">
+            <ul>
+                <li>
+                    <a href="#" class="tab-link active" data-index="0">form</a>
+                </li>
+                <li>
+                    <a href="#" class="tab-link" data-index="1">two</a>
+                </li>
+                <li>
+                    <a href="#" class="tab-link" data-index="2">three</a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="section-tabs-content">
+            <div class="tab-content active" data-index="0">
+                <div class="content">
+                    <div class="form-content">
+                        <form action="" id="form">
+                            <div class="form-items">
+                                <div class="item">
+                                    <label for="">Name:</label>
+                                    <input type="text" autocomplete="name" id="item1">
+                                </div>
+                                <div class="item">
+                                    <label for="">Surname:</label>
+                                    <input type="text" autocomplete="family-name" id="item2">
+                                </div>
+                            </div>
+                            <div class="form-items-max">
+                                <label for="">Phone:</label>
+                                <input type="tel" autocomplete="tel" id="item3">
+                            </div>
+                            <div class="form-items-max">
+                                <label for="">Mail:</label>
+                                <input type="email" autocomplete="email" id="item4">
+                            </div>
+                            <div class="item-agreement">
+                                <input type="checkbox" id="form-checkbox">
+                                <label for="form-checkbox">I agree......</label>
+                            </div>
+                            <div class="form-button">
+                                <button class="button" type="submit">Derive datasets</button>
+                            </div>
+                        </form>
+
+                        <div class="datasets">
+                            <h1 class="title">Form data will be here: </h1>
+                            <div class="form-data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-index="1">
+                <div class="content">
+                    <h1 class="title">second tab</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="tab-content" data-index="2">
+                <div class="content">
+                    <h1 class="title">Third tab</h1>
+                    <p>Pellentesque diam volutpat commodo sed egestas egestas fringilla. Orci sagittis eu
+                        volutpat odio facilisis mauris sit amet. Id venenatis a condimentum vitae sapien pellentesque
+                        habitant morbi. Morbi tristique senectus et netus et. Massa vitae tortor condimentum lacinia
+                        quis.
+                        In est ante in nibh mauris. Libero enim sed faucibus turpis in. Vel quam elementum pulvinar
+                        etiam
+                        non quam lacus suspendisse. Sociis natoque penatibus et magnis dis parturient. Mi bibendum neque
+                        egestas congue quisque egestas diam in arcu. Mattis vulputate enim nulla aliquet porttitor lacus
+                        luctus accumsan tortor. Mauris cursus mattis molestie a iaculis at erat. Purus non enim praesent
+                        elementum facilisis. Gravida neque convallis a cras semper auctor neque vitae.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./main.js"></script>
+</body>
+
+</html>

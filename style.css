@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 490px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.tabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tabs ul li {
+  margin-right: 3px;
+}
+
+a.tab-link {
+  padding: 10px 15px;
+  border: 1px solid lightgray;
+  border-bottom-color: transparent;
+  border-radius: 3px 3px 0 0;
+  text-transform: capitalize;
+  color: lightgrey;
+  display: block;
+  margin-bottom: -1px;
+}
+
+a.active {
+  padding-top: 15px;
+  color: #000;
+  position: relative;
+  /* background-color: #ffffff; */
+}
+
+a.active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.section-tabs-content {
+  border: 1px solid lightgray;
+  padding: 30px 0 30px 0;
+}
+
+@media (max-width: 490px) {
+  .section-tabs-content {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content .title {
+  margin: 0;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 490px) {
+  .tab-content .title {
+    padding-bottom: 10px;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+/* ************ */
+/* ****FORM**** */
+/* ************ */
+
+.form-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1080px) {
+  .form-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+form {
+  min-width: 500px;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 1298px) {
+  form {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 490px) {
+  form {
+    min-width: 300px;
+    padding: 10px;
+  }
+}
+
+.form-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-items .item {
+  width: 48%;
+}
+
+.form-items label,
+.form-items-max label {
+  display: block;
+}
+
+.form-items input,
+.form-items-max input {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.form-items input:focus,
+.form-items-max input:focus {
+  outline-color: #22b14c;
+}
+
+.form-items,
+.form-items-max {
+  padding-bottom: 15px;
+}
+
+.item-agreement {
+  padding-bottom: 15px;
+}
+
+.item-agreement input[type="checkbox"] {
+  display: none;
+}
+
+.item-agreement input[type="checkbox"] + label:before {
+  content: "";
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 1px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  margin: -5px 5px 0 0;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.item-agreement input[type="checkbox"]:checked + label:before {
+  background-image: url(./img/check-solid.svg);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.form-button button {
+  border: 1px solid lightslategrey;
+  padding: 10px 10px;
+  background-color: lightgreen;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-button button:hover {
+  background-color: rgb(47, 182, 47);
+  color: #ffffff;
+}
+
+/* **************** */
+/* ****DATASETS**** */
+/* **************** */
+
+.datasets {
+  min-width: 500px;
+}
+
+@media (max-width: 1198px) {
+  .datasets {
+    margin-top: 15px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 490px) {
+  .datasets {
+    min-width: 300px;
+  }
+}
+
+.datasets h1 {
+  text-align: center;
+}
+
+.form-data {
+  font-size: 24px;
+}
+
+@media (max-width: 785px) {
+  .form-data {
+    font-size: 20px;
+  }
+}
+
+.row span {
+  margin-right: 15px;
+}
+
+.row {
+  padding-bottom: 10px;
+}
+
+.row img {
+  width: 20px;
+  height: 20px;
+}
+
+.email-elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
